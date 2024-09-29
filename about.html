@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - GreenTech Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for the image section */
+    .about-image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .about-image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      filter: brightness(90%);
+    }
+
+    /* Optional: Add an overlay for better text readability */
+    .about-image-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+      border-radius: 15px;
+    }
+
+    .about-image-container img {
+      filter: brightness(95%);
+      transition: transform 0.5s ease, filter 0.3s ease;
+    }
+
+    /* Add some zoom effect on hover */
+    .about-image-container:hover img {
+      transform: scale(1.05);
+      filter: brightness(100%);
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GreenTech Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="j">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="idea.html">Get Idea</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>About Us</h1>
+        <p>At GreenTech Solutions, we are dedicated to bringing sustainable energy solutions to homes and businesses across the globe. Our mission is to reduce carbon footprints and promote the use of renewable energy sources.</p>
+        <h3>Our Mission</h3>
+        <p>To create a more sustainable future by helping businesses and individuals switch to eco-friendly energy alternatives.</p>
+        <h3>Our Team</h3>
+        <p>Meet the experts who make this mission possible:</p>
+        <ul>
+          <li><strong>Nimesh</strong> - CEO</li>
+          <li><strong>Dulanjana</strong> - Lead Engineer</li>
+          <li><strong>Hisinda</strong> - Energy Consultant</li>
+        </ul>
+      </div>
+
+      
+      <div class="col-md-5 offset-md-1">
+        <div class="about-image-container">
+          <img src="Solar-Photovoltaic-panel.jpeg" alt="Solar Panel" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="mt-3">
+          <a href="https://www.nsbm.ac.lk/" target="_blank" rel="noopener" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 GreenTech Solutions. NSBM Green University.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

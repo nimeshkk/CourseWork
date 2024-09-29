@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - GreenTech Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .service-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .service-card i {
+      font-size: 4rem;
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+
+    .service-card img {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .hero {
+      background: url('solar-power-engineer-installing.jpeg') no-repeat center center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 2;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 10px;
+      z-index: 2;
+      max-width: 600px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #343a40;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GreenTech Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="idea.html">Get Idea</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="hero">
+    <div>
+      <h1>Our Services</h1>
+      <p>At GreenTech Solutions, we are committed to providing sustainable energy solutions tailored to meet your needs. Explore our range of services designed to help you reduce costs and environmental impact.</p>
+    </div>
+  </div>
+
+ 
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="solar-installation.jpeg" class="card-img-top" alt="Solar Installations">
+          <div class="card-body text-center">
+            <i class="fas fa-solar-panel"></i>
+            <h3 class="card-title mt-3">Solar Installations</h3>
+            <p class="card-text">From rooftop solar to full-scale commercial systems, we provide top-quality installations for every energy need.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="energy-audit.jpg" class="card-img-top" alt="Energy Audits">
+          <div class="card-body text-center">
+            <i class="fas fa-bolt"></i>
+            <h3 class="card-title mt-3">Energy Audits</h3>
+            <p class="card-text">Our experts assess your energy usage and provide customized solutions to reduce your carbon footprint.</p>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="green-consulting.jpg" class="card-img-top" alt="Green Consulting">
+          <div class="card-body text-center">
+            <i class="fas fa-leaf"></i>
+            <h3 class="card-title mt-3">Green Consulting</h3>
+            <p class="card-text">We offer strategic consulting services to help companies transition to renewable energy sources efficiently.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center py-3">
+    <p>&copy; 2024 GreenTech Solutions. NSBM Green University.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
